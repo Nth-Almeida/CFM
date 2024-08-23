@@ -1,0 +1,62 @@
+{
+  "name": "cheese.formice.com",
+  "version": "0.0.1",
+  "description": "Website for cheese.formice.com",
+  "productName": "CheeseForMice",
+  "author": "SuspiciousLookingOwl",
+  "private": true,
+  "scripts": {
+    "lint": "eslint . --fix && prettier --write .",
+    "test": "echo \"No test specified\" && exit 0",
+    "dev": "cross-env NODE_OPTIONS=--openssl-legacy-provider quasar dev -m ssr",
+    "build": "cross-env NODE_OPTIONS=--openssl-legacy-provider quasar build"
+  },
+  "dependencies": {
+    "@quasar/extras": "^1.10.2",
+    "@types/chart.js": "^2.9.31",
+    "axios": "^0.21.1",
+    "axios-case-converter": "^0.7.0",
+    "chart.js": "^2.9.4",
+    "chroma-js": "^2.1.1",
+    "compression": "^1.7.4",
+    "core-js": "^3.6.5",
+    "dayjs": "^1.10.4",
+    "jwt-decode": "^3.1.2",
+    "quasar": "^2.0.0-beta.12",
+    "vue-class-component": "^8.0.0-rc.1",
+    "vue-i18n": "^9.0.0-beta.0",
+    "vue-property-decorator": "^10.0.0-rc.3",
+    "vuex-module-decorators": "^1.0.1",
+    "websocket-ts": "^1.1.0"
+  },
+  "devDependencies": {
+    "@quasar/app": "^3.0.0-beta.26",
+    "@types/chroma-js": "^2.1.3",
+    "@types/compression": "^1.7.0",
+    "@types/node": "^10.17.15",
+    "@typescript-eslint/eslint-plugin": "^4.31.0",
+    "@typescript-eslint/parser": "^4.31.0",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-vue": "^7.17.0",
+    "prettier": "^2.3.0",
+    "cross-env": "^7.0.3"
+  },
+  "browserslist": [
+    "last 10 Chrome versions",
+    "last 10 Firefox versions",
+    "last 4 Edge versions",
+    "last 7 Safari versions",
+    "last 8 Android versions",
+    "last 8 ChromeAndroid versions",
+    "last 8 FirefoxAndroid versions",
+    "last 10 iOS versions",
+    "last 5 Opera versions"
+  ],
+  "engines": {
+    "node": ">= 10.18.1",
+    "npm": ">= 6.13.4",
+    "yarn": ">= 1.21.1"
+  }
+}

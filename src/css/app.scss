@@ -1,0 +1,97 @@
+// app global css in SCSS form
+
+$xs-breakpoint: 718px;
+$sm-breakpoint: 1024px;
+$md-breakpoint: 1439px;
+$lg-breakpoint: 1920px;
+
+body[theme="dark"] {
+  background-color: $dark-bg;
+  color: $dark-contrast;
+}
+body[theme="dark"] .text-contrast {
+  color: $dark-contrast;
+}
+body[theme="dark"] .bg-contrast {
+  background-color: $dark-bg-contrast;
+}
+
+body[theme="light"] {
+  background-color: $light-bg;
+  color: $light-contrast;
+}
+body[theme="light"] .text-contrast {
+  color: $light-contrast;
+}
+body[theme="light"] .bg-contrast {
+  background-color: $light-bg-contrast;
+}
+
+a {
+  text-decoration: none;
+}
+body[theme="dark"] a {
+  color: lighten($dark-contrast, 10%);
+}
+body[theme="light"] a {
+  color: lighten($light-contrast, 10%);
+}
+
+.z-max {
+  z-index: 5999 !important;
+}
+
+.soopafresh {
+  font-family: "Soopafresh";
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Soopafresh";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/Soopafresh.woff2") format("woff2"), url("/fonts/Soopafresh.woff") format("woff");
+}
+
+.container,
+.container-sm,
+.container-md,
+.container-lg,
+.container-xl {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: $xs-breakpoint) {
+  .container,
+  .container-sm {
+    max-width: 640px;
+  }
+}
+
+@media (min-width: $sm-breakpoint) {
+  .container,
+  .container-sm,
+  .container-md {
+    max-width: 920px;
+  }
+}
+
+@media (min-width: $md-breakpoint) {
+  .container,
+  .container-sm,
+  .container-md,
+  .container-lg {
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: $lg-breakpoint) {
+  .container,
+  .container-sm,
+  .container-md,
+  .container-lg {
+    max-width: 1440px;
+  }
+}
